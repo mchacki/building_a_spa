@@ -1,0 +1,16 @@
+<html ng-app="hero">
+  <head>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body ng-controller="mainController">
+    <div class="container-fluid" style="padding: 20px">
+      <div class="row">
+        <button ng-click="loadRandom()" class="btn btn-neutral">Summon a Hero!</button>
+      </div>
+      <div class="row">
+        <hero ng-repeat="hero in heroList" id="{{ hero }}"></hero>
+      </div>
+    </div>
+  </body>
+</html>

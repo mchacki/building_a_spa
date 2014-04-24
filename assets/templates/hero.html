@@ -1,0 +1,13 @@
+<div class="col-md-3" style="border: 1px lightgrey solid; border-radius: 8px; margin: 2px; padding: 10px;">
+  <form name="superHeroForm" role="form">
+    <div class="form-group">
+      <label >Name</label>
+      <span>{{ hero.name }}</span>
+    </div>
+    <div class="form-group">
+      <label >Comment</label>
+      <input type="textarea" ng-model="hero.comment" required ng-trim></input>
+    </div>
+    <button ng-disabled="superHeroForm.$invalid" ng-click="hero.$update()" class="btn btn-default">Comment</button>
+  </form>
+</div>

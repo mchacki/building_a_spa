@@ -1,0 +1,34 @@
+{
+  "name": "SuperHeros",
+  "version": "1.0.0",
+  "author": "mchacki",
+  "description": "The super random hero app",
+
+  "controllers": {
+    "/": "heroes.js"
+  },
+
+  "assets": {
+    "index.html": {
+      "files": [
+        "assets/index.html"
+      ]
+    },
+    "app.js": {
+      "files": [
+        "assets/js/lib/angular.min.js",
+        "assets/js/lib/angular-resource.min.js",
+        "assets/js/src/**"
+      ]
+    },
+    "style.css": {
+      "files": [
+        "assets/css/**"
+      ]
+    }
+  },
+  
+  "files": {
+    "templates": "assets/templates"
+  }
+}
